@@ -17,6 +17,7 @@ def main():
         if guess == "GRAPHIC":
             print("You've won!")
             print(f"Total point so far: {WORDS[guess]}")
+
             WORDS.clear()
         elif guess in WORDS.keys():
             points = WORDS.pop(guess)
